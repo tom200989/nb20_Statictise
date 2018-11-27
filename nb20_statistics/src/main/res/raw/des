@@ -130,5 +130,11 @@ API DOC:
     implementation 'com.android.support:support-v4:28.0.0' // 控件采用了sdk28的V4包
     implementation 'com.jakewharton:butterknife:9.0.0-rc1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc1'
+3.记得在build.gradle (Module)里添加引用
+    3.1.如果把控件打成了aar, 则按照aar方式引用: implementation(name: '$你的aar包的名称', ext: 'aar')
+    3.2.如果是下载library,则按照library方式引用: implementation project(path: ':$你的library的名称')
+    3.3.如果是依赖, 则按照dependencies的方式导入: implementation 'com.github.tom200989:nb20_Statictise:V0.0.1'
+4.控件使用了百分比布局, 添加百分比依赖
+    implementation 'com.zhy:percent-support-extends:1.1.1'
 
 
