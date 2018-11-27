@@ -96,8 +96,8 @@ API DOC:
     StatisticsWeekWidget wdWeekStatistics;// 周视图
 
 [Method]
-    wdDayStatistics.setGoal( @int mins ) : mins 分钟数
-    wdDayStatistics.setStatistics( @List<Statistics> datas) : StatisticsBean集合
+    wdWeekStatistics.setGoal( @int mins ) : mins 分钟数
+    wdWeekStatistics.setStatistics( @List<Statistics> datas) : StatisticsBean集合
     
 ----------------------------------------------------------------------------------------------------
 
@@ -118,9 +118,9 @@ API DOC:
     StatisticsMonthWidget wdMonthStatistics;// 月视图
 
 [Method]
-    wdDayStatistics.setGoal( @int mins ) : mins 分钟数
-    wdDayStatistics.setStatistics( @List<Statistics> datas) : StatisticsBean集合
-    wdDayStatistics.setMonthDes(@int monthDes) : 月份, 如: 5, 7
+    wdMonthStatistics.setGoal( @int mins ) : mins 分钟数
+    wdMonthStatistics.setStatistics( @List<Statistics> datas) : StatisticsBean集合
+    wdMonthStatistics.setMonthDes(@int monthDes) : 月份, 如: 5, 7
 
 <PART 3: 其他配置>
 注意: 由于控件使用了butterknife 9.0, 请关注github官网及时采用最新的butterknife的使用方式
